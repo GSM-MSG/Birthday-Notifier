@@ -5,7 +5,7 @@ on:
     - cron: 0 23 * * *
 
 jobs:
-  monthly_cron:
+  birthday_cron:
     runs-on: ubuntu-latest
 
     steps:
