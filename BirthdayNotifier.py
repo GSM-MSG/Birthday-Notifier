@@ -2,9 +2,11 @@ from datetime import datetime, timedelta
 from discord_webhook import DiscordEmbed, DiscordWebhook
 from notion_client import Client
 from dotenv import load_dotenv
+from pytz import timezone
 import os
 
 load_dotenv()
+datetime.now(timezone('Asia/Seoul'))
 
 def intial_today():
   today = datetime.today()
