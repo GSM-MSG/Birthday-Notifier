@@ -6,10 +6,9 @@ from pytz import timezone
 import os
 
 load_dotenv()
-datetime.now(timezone('Asia/Seoul'))
 
 def intial_today():
-  today = datetime.today()
+  today = datetime.now(timezone('Asia/Seoul'))
   today = datetime(year=today.year, month=today.month, day=today.day)
   return today
 
