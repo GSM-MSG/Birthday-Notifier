@@ -63,10 +63,5 @@ for glutamate in birth_glutamates:
     embed = DiscordEmbed(title=title, description=f"{name}님의 생일을 축하해주세요!!", color="F6C064")
     embed.set_image(url="https://cdn-images-1.medium.com/max/1600/1*xKCFy6L8NZy-eDl2bylXTw.gif")
     webhook.add_embed(embed=embed)
-  else:
-    title = f"{diff_date.days}일 뒤 {name}님의 생일이에요!!"
-    description = f"{glutamate['properties']['생일']['date']['start']}"
-    embed = DiscordEmbed(title=title, description=description, color="F6C064")
-    webhook.add_embed(embed=embed)
 
 webhook.execute()
